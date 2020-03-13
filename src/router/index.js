@@ -8,8 +8,8 @@ const Login = () => import("../components/common/Login.vue");
 const Home = () => import("../components/common/Home.vue");
 const Welcome = () => import("../components/common/Welcome.vue");
 const User = () => import("../view/home-childer/User.vue");
-const routes = [
-  {
+const Roles = () => import('../view/home-childer/power/Roles.vue');
+const routes = [{
     path: "/",
     redirect: "/login"
   },
@@ -22,9 +22,18 @@ const routes = [
     path: "/home",
     component: Home,
     redirect: "/welcome",
-    children: [
-      { path: "/welcome", component: Welcome },
-      { path: "/users", component: User }
+    children: [{
+        path: "/welcome",
+        component: Welcome
+      },
+      {
+        path: "/users",
+        component: User
+      },
+      {
+        path: '/roles',
+        component: Roles
+      }
     ]
   }
 ];

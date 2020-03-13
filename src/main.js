@@ -12,6 +12,8 @@ import "../src/network/index";
 // 引入element-ui.js文件
 import './element.js'
 Vue.config.productionTip = false;
+//取消Vue所有的日志与警告
+Vue.config.silent = true;
 
 new Vue({
   render: h => h(App),
