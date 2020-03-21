@@ -9,6 +9,10 @@ const Home = () => import("../components/common/Home.vue");
 const Welcome = () => import("../components/common/Welcome.vue");
 const User = () => import("../view/home-childer/User.vue");
 const Roles = () => import('../view/home-childer/power/Roles.vue');
+const Rights = () => import('../view/home-childer/power/Rights.vue');
+const goodsList = () => import('../view/home-childer/goods/goodsList.vue');
+const Add = () => import('../view/home-childer/goods/Add.vue');
+const Params = () => import('../view/home-childer/params/Params.vue');
 const routes = [{
     path: "/",
     redirect: "/login"
@@ -33,6 +37,22 @@ const routes = [{
       {
         path: '/roles',
         component: Roles
+      },
+      {
+        path: '/rights',
+        component: Rights
+      },
+      {
+        path: '/goods',
+        component: goodsList
+      },
+      {
+        path: '/goods/add',
+        component: Add
+      },
+      {
+        path: '/params',
+        component: Params
       }
     ]
   }
