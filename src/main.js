@@ -11,7 +11,10 @@ import "../src/assets/font/iconfont.css";
 import "../src/network/index";
 // 引入element-ui.js文件
 import './element.js'
+import ZkTable from 'vue-table-with-tree-grid'
 Vue.config.productionTip = false;
+Vue.component('tree-table', ZkTable)
+
 //取消Vue所有的日志与警告
 Vue.config.silent = true;
 

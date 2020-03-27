@@ -13,6 +13,9 @@ const Rights = () => import('../view/home-childer/power/Rights.vue');
 const goodsList = () => import('../view/home-childer/goods/goodsList.vue');
 const Add = () => import('../view/home-childer/goods/Add.vue');
 const Params = () => import('../view/home-childer/params/Params.vue');
+const Cate = () => import('../view/home-childer/goods/Cate.vue');
+const Orders = () => import('../view/home-childer/order/orders.vue');
+const Reports = () => import('../view/home-childer/Reports/Reports.vue')
 const routes = [{
     path: "/",
     redirect: "/login"
@@ -28,15 +31,15 @@ const routes = [{
     redirect: "/welcome",
     children: [{
         path: "/welcome",
-        component: Welcome
+        component: Welcome,
       },
       {
         path: "/users",
-        component: User
+        component: User,
       },
       {
         path: '/roles',
-        component: Roles
+        component: Roles,
       },
       {
         path: '/rights',
@@ -53,6 +56,18 @@ const routes = [{
       {
         path: '/params',
         component: Params
+      },
+      {
+        path: '/categories',
+        component: Cate
+      },
+      {
+        path: '/orders',
+        component: Orders
+      },
+      {
+        path: '/reports',
+        component: Reports
       }
     ]
   }

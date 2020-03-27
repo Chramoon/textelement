@@ -7,6 +7,7 @@
       <el-breadcrumb-item>添加商品</el-breadcrumb-item>
     </el-breadcrumb>
     <!-- 卡片视图 -->
+
     <el-card>
       <!-- 提示区域 -->
       <el-alert
@@ -285,17 +286,18 @@ export default {
 
 <style scoped>
 .el-steps {
-    margin: 20px 0;
+  margin: 20px 0;
 }
 .el-step__title {
-    font-size: 13px;
+  font-size: 13px;
 }
 .el-checkbox {
-    margin-right: 10px !important;
+  margin-right: 10px !important;
 }
 .previewImg {
-    width: 100%;
+  width: 100%;
 }
 .btnAdd {
-    margin-top: 15px;
-}</style>
+  margin-top: 15px;
+}
+</style>
